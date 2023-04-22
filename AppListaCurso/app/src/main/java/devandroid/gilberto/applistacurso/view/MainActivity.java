@@ -60,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
                 editNomeCurso.setText("");
                 editTelefoneContato.setText("");
 
-
             }
         });
         btnFinalizar.setOnClickListener(new View.OnClickListener() {
