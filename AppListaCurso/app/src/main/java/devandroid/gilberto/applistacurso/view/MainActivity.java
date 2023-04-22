@@ -16,6 +16,7 @@ import devandroid.gilberto.applistacurso.model.Pessoa;
 public class MainActivity extends AppCompatActivity {
 
     SharedPreferences preferences;
+    SharedPreferences.Editor listavip;
     public static final String NOME_PREFRENCES = "pref_listavip";
 
     PessoaController controller;
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         preferences = getSharedPreferences(NOME_PREFRENCES, 0);
-        SharedPreferences.Editor listavip = preferences.edit();
+        listavip = preferences.edit();
 
 
         controller = new PessoaController();
@@ -71,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
                 editSobrenomeAluno.setText("");
                 editNomeCurso.setText("");
                 editTelefoneContato.setText("");
-
+                listavip.clear();
+                listavip.apply();
             }
         });
         btnFinalizar.setOnClickListener(new View.OnClickListener() {
