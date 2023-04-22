@@ -39,14 +39,14 @@
         android:layout_height="48dp"
         android:layout_margin="16dp"
         android:layout_marginTop="180dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/txt_sobrenome"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPrimeiroNome"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/editPrimeiroNome" />
 
     <EditText
         android:id="@+id/editNomeCurso"
