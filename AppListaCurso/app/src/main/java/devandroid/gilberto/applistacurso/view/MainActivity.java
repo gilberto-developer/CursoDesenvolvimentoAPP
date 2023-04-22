@@ -14,10 +14,9 @@ import devandroid.gilberto.applistacurso.model.Pessoa;
 public class MainActivity extends AppCompatActivity {
 
 
-    // declarando o objeto pessoa
     Pessoa pessoa;
 
-    String dadosPessoa;
+
     EditText editPrimeiroNome;
     EditText editSobrenomeAluno;
     EditText editNomeCurso;
@@ -25,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
     Button btnLimpar;
     Button btnFinalizar;
     Button btnSalvar;
-
 
 
     @Override
@@ -40,10 +38,10 @@ public class MainActivity extends AppCompatActivity {
         pessoa.setCursoDesejado("Análise de dados");
         pessoa.setTelefoneContato("71-988825988");
 
-        editPrimeiroNome=findViewById(R.id.editPrimeiroNome);
-        editSobrenomeAluno=findViewById(R.id.editSobrenomeAluno);
-        editNomeCurso=findViewById(R.id.editNomeCurso);
-        editTelefoneContato=findViewById(R.id.editTelefoneContato);
+        editPrimeiroNome = findViewById(R.id.editPrimeiroNome);
+        editSobrenomeAluno = findViewById(R.id.editSobrenomeAluno);
+        editNomeCurso = findViewById(R.id.editNomeCurso);
+        editTelefoneContato = findViewById(R.id.editTelefoneContato);
 
         btnLimpar = findViewById(R.id.btnLimpar);
         btnFinalizar = findViewById(R.id.btnFinalizar);
@@ -57,10 +55,10 @@ public class MainActivity extends AppCompatActivity {
         btnLimpar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             editPrimeiroNome.setText("");
-             editSobrenomeAluno.setText("");
-             editNomeCurso.setText("");
-             editTelefoneContato.setText("");
+                editPrimeiroNome.setText("");
+                editSobrenomeAluno.setText("");
+                editNomeCurso.setText("");
+                editTelefoneContato.setText("");
 
 
             }
@@ -68,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         btnFinalizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"Volte sempre",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Volte sempre", Toast.LENGTH_LONG).show();
                 finish();
             }
         });
@@ -81,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 pessoa.setCursoDesejado(editNomeCurso.getText().toString());
                 pessoa.setTelefoneContato(editTelefoneContato.getText().toString());
 
-                Toast.makeText(MainActivity.this,"Salvo! " + pessoa.toString(),Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Salvo! " + pessoa.toString(), Toast.LENGTH_LONG).show();
 
             }
         });
