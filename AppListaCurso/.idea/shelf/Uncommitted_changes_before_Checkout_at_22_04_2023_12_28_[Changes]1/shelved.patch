@@ -1,0 +1,39 @@
+Index: app/src/main/java/devandroid/gilberto/applistacurso/view/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/devandroid/gilberto/applistacurso/view/MainActivity.java b/app/src/main/java/devandroid/gilberto/applistacurso/view/MainActivity.java
+--- a/app/src/main/java/devandroid/gilberto/applistacurso/view/MainActivity.java	
++++ b/app/src/main/java/devandroid/gilberto/applistacurso/view/MainActivity.java	
+@@ -9,11 +9,12 @@
+ import android.widget.Toast;
+ 
+ import devandroid.gilberto.applistacurso.R;
++import devandroid.gilberto.applistacurso.controller.PessoaController;
+ import devandroid.gilberto.applistacurso.model.Pessoa;
+ 
+ public class MainActivity extends AppCompatActivity {
+ 
+-
++    PessoaController controller;
+     Pessoa pessoa;
+ 
+ 
+@@ -31,6 +32,7 @@
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_main);
+ 
++        controller = new PessoaController();
+         // criando o objeto pessoa
+         pessoa = new Pessoa();
+         pessoa.setPrimeiroNome("Gilberto");
+@@ -79,7 +81,7 @@
+                 pessoa.setTelefoneContato(editTelefoneContato.getText().toString());
+ 
+                 Toast.makeText(MainActivity.this, "Salvo! " + pessoa.toString(), Toast.LENGTH_LONG).show();
+-
++                controller.salvar(pessoa);
+             }
+         });
+     }
