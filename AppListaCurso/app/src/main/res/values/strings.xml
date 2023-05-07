@@ -1,11 +1,12 @@
 <resources>
     <string name="app_name">AppListaCurso</string>
-    <string name="txt_titulo">Aplicativo Lista VIP Curso Android</string>
-    <string name="txt_primeiro_nome">Primerio Nome</string>
-    <string name="txt_sobrenome">Sobrenome</string>
-    <string name="txt_curso_desejado">Nome do Curso Desejado</string>
-    <string name="txt_telefone">telefone</string>
+    <string name="txt_titulo">Aplicativo PetroPoços</string>
+    <string name="txt_primeiro_nome">Nome do poço</string>
+    <string name="txt_sobrenome">Método</string>
+    <string name="txt_curso_desejado">Área</string>
+    <string name="txt_telefone">IP do dispositivo</string>
     <string name="btn_limpar">Limpar</string>
     <string name="btn_salvar">Salvar</string>
-    <string name="btn_finalizar">finalizar</string>
+    <string name="btn_finalizar">Finalizar</string>
+    <string name="txt_selecione_um_metodo">Selecione um método..</string>
 </resources>

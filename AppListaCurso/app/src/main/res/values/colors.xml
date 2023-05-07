@@ -2,5 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="corBotoes">#03A9F4</color>
+    <color name="corBotoes">#D0E8D60F</color>
+    <color name="corTitulo">#4CAF50</color>
+    <color name="corTexto">#00E676</color>
 </resources>
